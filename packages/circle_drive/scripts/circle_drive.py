@@ -24,11 +24,11 @@ class MyNode(DTROS):
             msg.v = 0.0
             msg.omega = 5.0
             rospy.loginfo("Publishing message")
-            self.pub.publish(msg)
+           # self.pub.publish(msg)
             rate.sleep()
             msg.omega = 0.0
             rospy.loginfo("Publishing message -")
-            self.pub.publish(msg)
+           # self.pub.publish(msg)
             rate.sleep()
 
 if __name__ == '__main__':
